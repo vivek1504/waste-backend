@@ -4,8 +4,8 @@
   "main": "dist/index.js",
   "scripts": {
     "generate": "prisma generate",
-    "build": "npm run generate && tsc",
-    "start": "node dist/index.js"
+    "build": "npm install && npm run generate",
+    "start": "tsc -b && node dist/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
