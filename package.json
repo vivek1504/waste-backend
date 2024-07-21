@@ -1,0 +1,19 @@
+{
+  "name": "my-backend",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "generate": "prisma generate",
+    "build": "npm run generate && tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "prisma": "^2.30.0",
+    "@prisma/client": "^2.30.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
