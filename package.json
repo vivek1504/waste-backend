@@ -4,13 +4,13 @@
   "main": "dist/index.js",
   "scripts": {
     "generate": "prisma generate",
-    "build": "npm install && npm run generate",
-    "start": "tsc -b && node dist/index.js"
+    "build": "tsc -b && prisma generate",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@prisma/client": "^2.30.0",
     "@types/bcryptjs": "^2.4.6",
-    "@types/cors": "^2.8.17",
+    "@types/cors": "^2.8.17", 
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/multer": "^1.4.11",
